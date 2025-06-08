@@ -1,11 +1,11 @@
 local Scripts = {
 	{
 		PlacesIds = {2753915549, 4442272183, 7449423635},
-		Path = "BloxFruits.luau"
+		Path = "{Games}BloxFruits.luau"
 	},
 	{
 		PlacesIds = {10260193230},
-		Path = "MemeSea.luau"
+		Path = "{Games}MemeSea.luau"
 	}
 }
 
@@ -15,6 +15,7 @@ urls.Owner = "https://raw.githubusercontent.com/1SCRbLx/"
 urls.Repository = urls.Owner .. "SCRbLx/main/"
 urls.Translator = urls.Repository .. "Translator/"
 urls.Utils = urls.Repository .. "Utils/"
+urls.Games = urls.Repository .. "Games/"
 
 do
 	local _ENV = (getgenv or getrenv or getfenv)()
@@ -82,6 +83,6 @@ end
 
 for _, Data in Scripts do
 	if IsPlace(Data) then
-		return fetcher.load("{Repository}Utils/BloxFruits/" .. Data.Path)(fetcher, ...)
+		return fetcher.load(Data.Path)(fetcher, ...)
 	end
 end
