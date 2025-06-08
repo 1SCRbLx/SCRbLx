@@ -11,10 +11,10 @@ local Scripts = {
 
 local fetcher, urls = {}, {}
 
-urls.Owner = "https://raw.githubusercontent.com/tlredz/";
-urls.Repository = `{ urls.Owner }Scripts/refs/heads/main/`;
-urls.Translator = `{ urls.Repository }Translator/`;
-urls.Utils = `{ urls.Repository }Utils/`;
+urls.Owner = "https://raw.githubusercontent.com/1SCRbLx/"
+urls.Repository = urls.Owner .. "SCRbLx/main/"
+urls.Translator = urls.Repository .. "Translator/"
+urls.Utils = urls.Repository .. "Utils/"
 
 do
 	local _ENV = (getgenv or getrenv or getfenv)()
@@ -63,7 +63,7 @@ do
 		local execute, error = loadstring(raw)
 		
 		if type(execute) ~= "function" then
-			CreateMessageError(`[2] [{ identifyexecutor() }] sintax error: { Url }\n>>{ error }<<`)
+			CreateMessageError(`[2] [{ identifyexecutor() }] syntax error: { Url }\n>>{ error }<<`)
 		else
 			return execute
 		end
@@ -82,6 +82,6 @@ end
 
 for _, Data in Scripts do
 	if IsPlace(Data) then
-		return fetcher.load("{Repository}Games/" .. Data.Path)(fetcher, ...)
+		return fetcher.load("{Repository}Utils/BloxFruits/" .. Data.Path)(fetcher, ...)
 	end
-  end
+end
