@@ -11,7 +11,7 @@
 ## global load
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/Main.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/main.luau"))()
 ```
 - Blox Fruits
 ```lua
@@ -20,4 +20,4 @@ local Settings = {
     Translator = true -- true / false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/Main.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/main.luau"))()
