@@ -12,7 +12,7 @@ local Scripts = {
 local fetcher, urls = {}, {}
 
 urls.Owner = "https://raw.githubusercontent.com/1SCRbLx/"
-urls.Repository = urls.Owner .. "SCRbLx/main/"
+urls.Repository = `{ urls.Owner }SCRbLx/refs/heads/main/`;
 urls.Utils = urls.Repository .. "Utils/"
 urls.Games = urls.Repository .. "Games/"
 
