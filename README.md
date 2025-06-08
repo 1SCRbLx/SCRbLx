@@ -8,11 +8,8 @@
 - Blox Fruits
 - Meme Sea (soon)
 
-## global load
+##Blox Fruits
 
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/Main.luau"))()
-Blox Fruits
 
 local Settings = {
     JoinTeam = "Pirates", -- Pirates / Marines
@@ -22,3 +19,8 @@ local Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/Main.luau"))()
 
 ---
+
+## global load
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1SCRbLx/SCRbLx/main/Main.luau"))()
